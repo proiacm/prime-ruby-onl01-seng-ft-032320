@@ -1,8 +1,10 @@
 def prime?(int)
-num=(1..1000)
-num_array = num.to_a
- num_array.each do |x|
-   return false if num % x == 0
+ if num <= 1 
+   return false 
+   elsif num <=3
+   return true 
+ else (2..num-1).none? do |n|
+   num % n == 0 
+  end
  end
- true
-end  
+end
