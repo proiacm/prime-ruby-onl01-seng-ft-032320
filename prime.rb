@@ -1,10 +1,10 @@
 def prime?(int)
- if num <= 1 
+ if int <= 1 
    return false 
-   elsif num <=3
+   elsif int <=3
    return true 
- else (2..num-1).none? do |n|
-   num % n == 0 
+ else (2..int-1).none? do |n|
+   int % n == 0 
   end
  end
 end
